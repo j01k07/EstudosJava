@@ -1,0 +1,17 @@
+Telas
+
+Cadastro
+Painel de controle - Seleciona o cliente e dá o ok -> vai para a tela de fluxo de caixa
+
+só vai ter um usuário de adm
+outros usuários são apenas visualizadores
+
+Mysql
+Tomcat
+Html e Css
+
+
+Tabelas
+- Usuario
+- Empresa
+- FluxoDeCaixa
