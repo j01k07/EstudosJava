@@ -15,3 +15,8 @@ Tabelas
 - Usuario
 - Empresa
 - FluxoDeCaixa
+
+
+O que fazer para configurar o mysql server
+- Alterar o arquivo mysqld.cnf na pasta /etc/mysql/mysql.conf.d - alterar o bind address para o ip da máquina
+- Rodar o grant para que seja possível acessar o banco remotamente (GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123' WITH GRANT OPTION;)
