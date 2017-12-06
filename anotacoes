@@ -1,0 +1,22 @@
+Telas
+
+Cadastro
+Painel de controle - Seleciona o cliente e dá o ok -> vai para a tela de fluxo de caixa
+
+só vai ter um usuário de adm
+outros usuários são apenas visualizadores
+
+Mysql
+Tomcat
+Html e Css
+
+
+Tabelas
+- Usuario
+- Empresa
+- FluxoDeCaixa
+
+
+O que fazer para configurar o mysql server
+- Alterar o arquivo mysqld.cnf na pasta /etc/mysql/mysql.conf.d - alterar o bind address para o ip da máquina
+- Rodar o grant para que seja possível acessar o banco remotamente (GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123' WITH GRANT OPTION;)
