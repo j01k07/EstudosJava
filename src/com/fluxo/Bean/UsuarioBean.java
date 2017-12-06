@@ -1,4 +1,4 @@
-package com.fluxo.Bean;
+package com.fluxo.bean;
 
 public class UsuarioBean {
 

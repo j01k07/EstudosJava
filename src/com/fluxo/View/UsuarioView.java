@@ -1,4 +1,4 @@
-package com.fluxo.View;
+package com.fluxo.view;
 
 public class UsuarioView {
 
