@@ -17,22 +17,23 @@
 			<div
 				style="width: 100%; border-top: 2px solid black; margin-top: 10px"></div>
 
-			<rich:panel header="Cadastrar usuário">
-				<h:form style="margin-top:20px">
+			<rich:panel header="Cadastrar usuário" id="painelSuperior">
+				<h:form style="margin-top:20px" id="formulario">
 					<h:panelGrid columns="2">
-						<h:outputText value="Nome completo: " />
-						<h:inputText />
+						<h:outputText  value="Nome completo: " />
+						<h:inputText value="#{cadastraUsuarioBean.nome}" />
 						
 						<h:outputText value="Login: " />
-						<h:inputText />
+						<h:inputText value="#{cadastraUsuarioBean.login}" />
 						
 						<h:outputText value="Senha: " />
-						<h:inputText />
+						<h:inputSecret value="#{cadastraUsuarioBean.senha}" />
 						
 					</h:panelGrid>
 					
 					<h:panelGrid columns="1">
-						<a4j:commandButton value="Salvar" />
+						<a4j:commandButton value="Salvar" action="#{cadastraUsuarioBean.salvarUsuario}" >
+						</a4j:commandButton>
 					</h:panelGrid>
 				</h:form>
 			</rich:panel>

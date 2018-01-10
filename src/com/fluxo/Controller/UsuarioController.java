@@ -40,6 +40,17 @@ public class UsuarioController {
 		session.getTransaction().commit();
 		session.close();
 	}
+	
+	public void salvarUsuario(Usuario usuario) {
+		
+		setup();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+		
+		session.save(usuario);
+		session.getTransaction().commit();
+		session.close();
+	}
 
 	public void exit() {
 		
