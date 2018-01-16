@@ -21,18 +21,18 @@
 				<h:form style="margin-top:20px" id="formulario">
 					<h:panelGrid columns="2">
 						<h:outputText  value="Nome completo: " />
-						<h:inputText value="#{cadastraUsuarioBean.nome}" />
+						<h:inputText id="idNome" value="#{cadastraUsuarioBean.nome}" />
 						
 						<h:outputText value="Login: " />
-						<h:inputText value="#{cadastraUsuarioBean.login}" />
+						<h:inputText id="idLogin" value="#{cadastraUsuarioBean.login}" />
 						
 						<h:outputText value="Senha: " />
-						<h:inputSecret value="#{cadastraUsuarioBean.senha}" />
+						<h:inputSecret id="idSenha" value="#{cadastraUsuarioBean.senha}" />
 						
 					</h:panelGrid>
 					
 					<h:panelGrid columns="1">
-						<a4j:commandButton value="Salvar" action="#{cadastraUsuarioBean.salvarUsuario}" >
+						<a4j:commandButton value="Salvar" action="#{cadastraUsuarioBean.salvarUsuario}" render="@all" >
 						</a4j:commandButton>
 					</h:panelGrid>
 				</h:form>
